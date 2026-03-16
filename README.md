@@ -62,23 +62,35 @@ python ga_knapsack.py
 |--------|-------------|
 | Number of generations |50 |
 | Best value at generation 1 |60|
-| Final best value |77 |
-| Total weight of best solution (kg) |14.4 |
-| Is solution valid (Yes / No) |Yes |
+| Final best value |77|
+| Total weight of best solution (kg) |14.4|
+| Is solution valid (Yes / No) |Yes|
 
 **Copy the printed packing list here:**
+### Experiment 1 — Baseline Result
+
 ```
-[Water bottle
-  + First aid kit
-  + Sleeping bag
-  + Torch
-  + Energy bars (x6)
-  + Rain jacket
-  + Map & compass
-  + Cooking stove
-  + Rope (10 m)
-  + Sunscreen
-  + Power bank PASTE PACKING LIST OUTPUT HERE ]
+Best Packing List
+--------------------------------------
++ Water bottle
++ First aid kit
++ Sleeping bag
++ Torch
++ Energy bars (x6)
++ Rain jacket
++ Map & compass
++ Cooking stove
++ Rope (10 m)
++ Sunscreen
++ Power bank
+--------------------------------------
+Weight : 14.4 / 15.0 kg
+Value  : 77
+Valid  : Yes
+
+Generations run : 50
+Value at gen 1  : 60
+Final best value: 77
 ```
 
 **Look at `plots/experiment_1.png` and describe what you see (2–3 sentences).**  
