@@ -119,7 +119,7 @@ def run_ga(
     population_size = 20,
     generations     = 50,
     crossover_rate  = 0.8,
-    mutation_rate   = 0.05,   # <- EXPERIMENT 2: change this value
+    mutation_rate   = 0.01,   # <- EXPERIMENT 2: change this value
     tournament_size = 3,
     seed            = 42,
 ):
@@ -239,6 +239,33 @@ if __name__ == "__main__":
     #       Change mutation_rate and the plot filename each time.
     #       Record results in README.md.
     # ==========================================================================
+    chr2a, val2a, vl2a = run_ga(
+    population_size=20, generations=50,
+    crossover_rate=0.8, mutation_rate=0.01,
+    tournament_size=3, seed=42
+)
+print_solution(chr2a)
+print(f"  Final best value: {val2a}")
+save_plot(vl2a, "plots/experiment_2a.png", "mutation_rate=0.01")
+
+
+chr2b, val2b, vl2b = run_ga(
+    population_size=20, generations=50,
+    crossover_rate=0.8, mutation_rate=0.05,
+    tournament_size=3, seed=42
+)
+print_solution(chr2b)
+print(f"  Final best value: {val2b}")
+save_plot(vl2b, "plots/experiment_2b.png", "mutation_rate=0.05")
+chr2c, val2c, vl2c = run_ga(
+    population_size=20, generations=50,
+    crossover_rate=0.8, mutation_rate=0.30,
+    tournament_size=3, seed=42
+)
+print_solution(chr2c)
+print(f"  Final best value: {val2c}")
+save_plot(vl2c, "plots/experiment_2c.png", "mutation_rate=0.30")
+
 
     # --- Copy and edit below this line ---
 
